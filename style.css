@@ -1,5 +1,5 @@
 @import url("Animate.css");
-
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Eczar');
 /*color*/
 /*Smoky Black --> #0A090C
 Light Gray --> #D3D5D4
@@ -19,7 +19,7 @@ html,body
 
 body
 {
-    font-family: "articleFont", Helvetica, Arial, sans-serif;
+    font-family: 'Arsenal', sans-serif;
 }
 
 strong
@@ -29,7 +29,7 @@ strong
 
 h1,h2,h3,h4,h5
 {
-    font-family: "titleFont";
+    font-family: 'Eczar', serif;
 }
 
 a
@@ -38,22 +38,6 @@ a
     color: black;
 }
 
-p, span
-{
-    font-family: "articleFont";
-}
-
-@font-face
-{
-    font-family: "titleFont";
-    src: url(Ranga/Ranga-Regular.ttf);
-}
-
-@font-face
-{
-    font-family: "articleFont";
-    src: url(Slabo/Slabo-Regular.ttf);
-}
 
 .animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
 @-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
@@ -529,13 +513,13 @@ a.back-to-top:hover
 #service
 {
     float:left;
-    background-image: url("service.jpg");
+    background-image: url("Images/service.jpg");
     background-size: 100% 100%;
 }
 #warehouse
 {
     float:right;
-    background-image: url("warehouse.jpg");
+    background-image: url("Images/warehouse.jpg");
     background-size: 100% 100%;
 }
 #service:hover,#warehouse:hover
