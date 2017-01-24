@@ -1,0 +1,198 @@
+<HTML>
+<meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+<head>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="hover.css">
+</head>
+
+<body onload="openNav(); carousel(); changetesti();" onresize="openNav()">
+  <div id="mySidenav" class="sidenav">
+    <div style="width: 100%; height: 50px; position:absolute; top:0">
+       <i class=" fa fa-remove" style="font-size:30px; margin:10px; float:right; top:10; width:30px; color:white;" onclick="closeNav()"></i>
+    </div>
+    <ul style=" list-style : none; margin:0; padding:0"> 
+      <li> <a class="hvr-grow" href="index.html"> <i class="fa fa-home"></i>Home</a> </li> 
+      <li> <a class="hvr-grow" href="about_us.html"> <i class="fa fa-thumbs-up" ></i>About Us</a> </li>
+      <li> <a class="hvr-grow" href="our_services.html"> <i class="fa fa-thumbs-up" ></i>Services</a> </li>
+      <li>  <a class="hvr-grow" href="our_warehouse.html"> <i class="fa fa-truck" ></i>Warehouse</a> </li>
+      <li onclick=" loadlist()" style="cursor:pointer"> <a href="javascript:void(0);"> <i class="fa fa-phone" ></i>Contact <i style="float:right; width:25px;" class="fa fa-caret-down"></i></a>     
+          <ul class="nestedlist" style="display:none">
+              <li> <a class="hvr-grow" href="https://www.facebook.com/richard.fumetsu"> <i class="fa fa-facebook"></i>Facebook</a> </li>
+              <li> <a class="hvr-grow" href="index.html"> <i class="fa fa-twitter"></i>Twitter</a> </li>
+              <li> <a class="hvr-grow" href="https://www.instagram.com/richardstteven/"> <i class="fa fa-instagram"></i>Instagram</a> </li>
+          </ul>
+      </li>
+    </ul>  	
+	</div>
+
+  <div id= "banner">
+      <i class="fa fa-reorder menu" onclick="openNav(); openNavMobile()"></i>
+      <div class= "bannercont">
+        <a href="index.html">
+        <img class= "bannerimg" src="kh0.png">
+        </a>
+
+        <div class="socialcontainer">
+          <p class="desktoponly" >Join Us</p>
+          <a href="https://www.facebook.com/richard.fumetsu">
+              <div class="socialicon">
+                <i class="fa fa-facebook"></i>  
+              </div>
+          </a>
+          
+          <a class="" href="" >
+              <div class="socialicon"> 
+                  <i class="fa fa-twitter"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <div id ="bigmain">
+      <div class = "slider">
+          
+          <div class="slidercontainer mySlides">
+            <img class ="img" src="kh0.jpg" >
+              <div class="slidernote leftnote desktoponly ">
+              Menerima Pengiriman Barang FCL LCL baik itu by Sea Maupun By Air By Sea 3-4 Minggu, By Air 5-7 Hari Door To Door Service. Harga kami sudah all in tidak lagi dikenakan pajak, custom, dll.
+              </div>
+          </div>
+
+          <div class="slidercontainer mySlides">
+            <img class ="img" src="kh1.jpg" >
+              <div class="slidernote leftnote desktoponly">
+              Menerima Pengiriman dari Manca Negara (World Wide)seperti China, Malaysia, Jerman, Singapore, Taiwan, Korea, Thailand/Bangkok, US, Itali, Jepang, India, Hongkong, Amerika, Spanyol, dll.
+              </div>
+          </div>
+
+          <div class="slidercontainer mySlides">
+            <img class ="img" src="kh2.jpg" >
+              <div class="slidernote leftnote desktoponly">
+              Melayani jasa pencarian barang/pembelian barang dari China
+              </div>
+          </div>
+
+          <div class="slidercontainer mySlides">
+              <img class ="img" src="kh3.jpg" >
+              <div class="slidernote leftnote desktoponly">
+              Menerima Pick Up Barang di tempat supplier/seller.
+              </div>
+          </div>
+       
+          <a class="sliderbtn sliderbtnleft" onclick="plusDivs(-1)">&#10094;</a>
+          <a class="sliderbtn sliderbtnright" onclick="plusDivs(1)">&#10095;</a>
+        </div>
+
+          <div id="konghai">
+            <h2> Konghai Express </h2>
+            <div id="konghaicontent">
+            <p>
+            Kami,PT Konghai Express adalah perusahaan jasa ekspedisi impor door to door service terbesar ke 5 di Indonesia, Kami adalah solusi tepat untuk ekspedisi impor door to door service by sea / by air.
+            </p>
+            </div> 
+            <a href="about_us.html">
+            <div id="konghaibtn">
+            Learn More..
+            </div>
+            </a>
+          </div>
+
+          <div id="miscontainer">
+            <a href="##">
+            <div class="hvr-float" id="service">
+              Our Service
+            </div>
+            </a>
+            <a href="our_warehouse.html">
+            <div class="hvr-float" id="warehouse">
+              Our Warehouse
+            </div>
+            </a>
+          </div>
+
+          <div id="testimonials">
+            <h2> Testimonials</h2>
+            <div id="testimonialscontent1" class="animate-left">
+              <p> 
+              <i class="fa fa-quote-left"></i> 
+              Saya pernah melakukan jasa trading dengan Konghai barang sesuai dan cocok jumlahnya mungkin nilainya akan dinaikan dari sebelumnya karena sudah recommended
+              <i class="fa fa-quote-right"></i>
+              </p>
+              <hr>
+              <p class="nomargin">Aneka Print</p>
+              <p class="nomargin">Jakarta</p>
+            </div>
+            <div id="testimonialscontent2" class="animate-left">
+              <p> 
+              <i class="fa fa-quote-left"></i> 
+              Konghai Express pelayanannya sangat ramah, barang yang saya pesan sudah diterima dengan baik dan juga tepat waktu
+              <i class="fa fa-quote-right"></i>
+              </p>
+              <hr>
+              <p class="nomargin">Amin</p>
+              <p class="nomargin">Jakarta</p>
+            </div>
+          </div>
+
+           <div id = "footer" class="footer">
+    <div class="ftcontainer">
+      <div id="ftcontent1" class="ftcontent">
+        <h3 class="fttittle" >
+          <i class="fa fa-map-marker"></i> <strong> Our </strong> Office 
+        </h3>
+        <p>
+        Taman Palem Lestari,
+        <br>
+        Ruko Galaxy blok H No 32,
+        <br>
+        Cengkareng-Jakarta,
+        <br>
+        Indonesia
+        </p>
+      </div>
+
+      <div id="ftcontent2" class="ftcontent">
+        <h3 class="fttittle">
+            <i class="fa fa-book"></i> <strong>Contact</strong> us
+        </h3>
+
+        <div class="ftcontact">
+          <h3 class="nomargin" > <i class="fa fa-phone"></i> Mobile </h3>
+          <p class="nomargin">081289372288</p>
+        </div>
+        
+        <div class="ftcontact">
+          <h3 class="nomargin" > <i class="fa fa-envelope"></i> Email </h3>
+          <a class="nomargin" href="mailto:richard.konghaiexpress@gmail.com">richard.logistic@yahoo.com</a>  
+        </div>
+
+         <div class="ftcontact">
+          <div>
+            <h3 class="nomargin" > <img src="bbm.png" style="width:20px; height:20px;"> BBM </h3>  
+          </div> 
+          <p class="nomargin"> PIN : 5938723C</p>  
+        </div>
+
+         <div class="ftcontact">
+          <div>
+            <h3 style="font-size:25px" class="nomargin" > <img src="line.png" style="width:20px; height:20px;"> Line </h3>  
+          </div> 
+          <p class="nomargin"> 081289372288</p>  
+        </div>
+      </div>
+    </div>
+        <div id="copyright">
+        <hr>
+        <h6 class="nomargin"> Copyright &copy; PT. Konghai Express</h6>
+        </div>
+  </div>
+     </div>
+      <script src="javascript.js" type="text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="query.js" type="text/javascript"></script>
+</body>
+</HTML>
+
